@@ -58,7 +58,7 @@ retry_result retry_fn(fn_retry_status(*fn)(void *), void *args, retrier_t *retri
 		}
 
 		if (retrier->log != NULL) {
-			// Make it thread-safe
+			// Ensure thread-safety
 			flockfile(retrier->log);
 			fprintf(retrier->log, "%s\n", status.err);
 			funlockfile(retrier->log);

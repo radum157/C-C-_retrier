@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -std=c11 -Wall -Wextra
+CFLAGS := -std=c17 -Wall -Wextra
 OLEVEL := -O2
 LIBFLAGS :=
 
